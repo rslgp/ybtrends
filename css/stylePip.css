@@ -144,15 +144,12 @@ textarea {
 /* Content */
 
 .content-wrap {
-  padding: calc(3.7692em + 480px) 0 0.01em;
+  /* padding: calc(3.7692em + 480px) 0 0.01em; */
   overflow: auto;
   background: #f1f1f1;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
-
-.content-wrap.PiP { padding: calc(4.25em + 236px) 0 0.01em; }
-
 
 /* Video 
   top: 3.7692em;*/

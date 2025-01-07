@@ -1,26 +1,27 @@
-const botaoClose = $(".button-close");
-const botaoOpen = $(".button-open");
-const caixaBox = $(".box");
-const pipVideo = $('.video');
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+  // Get DOM elements using native JavaScript
+  const botaoClose = document.querySelector(".button-close");
+  const botaoOpen = document.querySelector(".button-open");
+  const caixaBox = document.querySelector(".box");
+  const pipVideo = document.querySelector('.video');
 
-$(function () {
-  botaoOpen.hide();
-  botaoClose.bind("click", function () {
-	pipVideo.attr('style', 'box-shadow: none; width: 50px;');
-    caixaBox.hide();
-    if ($(this).attr("class") == "button-close")
-    {
-      botaoOpen.show();
-    }
+  // Hide the open button initially
+  botaoOpen.style.display = 'none';
+
+  // Add click event listener to the close button
+  botaoClose.addEventListener("click", function () {
+    pipVideo.style.boxShadow = 'none';
+    pipVideo.style.width = '50px';
+    caixaBox.style.display = 'none';
+    botaoOpen.style.display = 'block';
+  });
+
+  // Add click event listener to the open button
+  botaoOpen.addEventListener("click", function () {
+    pipVideo.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
+    pipVideo.style.width = '640px';
+    caixaBox.style.display = 'block';
+    botaoOpen.style.display = 'none';
   });
 });
-
-botaoOpen.bind("click", function () {
-	var botaoOpen = $(".button-open");
-	pipVideo.attr('style', 'box-shadow: 0 2px 10px rgba(0,0,0,0.3); width: 640px;');
-    caixaBox.show();        
-    if ($(this).attr("class") == "button-open")
-    {
-      botaoOpen.hide();
-    }
-  });

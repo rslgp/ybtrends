@@ -1,14 +1,26 @@
 const queryURL = 'https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&maxResults=50&key=AIzaSyCJNSpfg5WN5fACDfL6gdUibtc7rCtvJuI&fields=items(id%2Csnippet(title%2CchannelId%2CpublishedAt%2CcategoryId)%2Cstatistics(dislikeCount%2ClikeCount%2CviewCount))';
 //detect error http://jshint.com/
 
-const iframe = document.getElementById('videoPip');
 
 const nomePaisLineInicio = '<br><br><br>--------------------------------------- <b style="font-size: 16px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif; ">';
 const nomePaisLineFim = '</b> ------------------------------------------------<br><br>';
 
 const worldwideLine = '--------------------------------------- <b style="font-size: 16px; font-family: Helvetica Neue,Helvetica,Arial,sans-serif; "> Worldwide' + nomePaisLineFim;
 
-const outputResultado = document.getElementById("resultado");
+let outputResultado = document.getElementById("resultado");
+let iframe = document.getElementById('videoPip');
+
+async function init() {
+	// Wait for the DOM to be fully loaded
+	document.addEventListener('DOMContentLoaded', async () => {
+		// Assign DOM elements after the DOM is loaded
+		iframe = document.getElementById('videoPip');
+		outputResultado = document.getElementById('resultado');
+	});
+}
+
+// Start the application
+init();
 
 var videos = [];
 

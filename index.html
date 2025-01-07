@@ -7,21 +7,21 @@
 	<link rel="icon" href="data:;base64,=">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="https://rslgp.github.io/ybtrends/css/styleBox.css">
-	<link rel="stylesheet" href="https://rslgp.github.io/ybtrends/css/stylePip.css">
-	<link rel="stylesheet" href="https://rslgp.github.io/ybtrends/css/styleProgress.css">
-	<link rel="stylesheet prefetch" href="https://rslgp.github.io/ybtrends/css/normalize.css">
+	<link rel="stylesheet" href="/css/styleBox.css">
+	<link rel="stylesheet" href="/css/stylePip.css">
+	<link rel="stylesheet" href="/css/styleProgress.css">
+	<link rel="stylesheet prefetch" href="/css/normalize.css">
 	<link
 		href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic"
 		rel="stylesheet" type="text/css">
 
 	<!-- Scripts -->
-	<script src="https://rslgp.github.io/ybtrends/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://rslgp.github.io/ybtrends/js/util.js"></script>
-	<script src="https://rslgp.github.io/ybtrends/js/minimize.js"></script>
-	<script src="https://rslgp.github.io/ybtrends/js/ybtrends.js?v=1.0"></script>
-	<script src="https://rslgp.github.io/ybtrends/js/progress.js"></script>
-	<script src="https://rslgp.github.io/ybtrends/js/scroll.js"></script>
+	<script src="/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/js/util.js"></script>
+	<script src="/js/minimize.js"></script>
+	<script src="/js/ybtrends.js?v=2"></script>
+	<script src="/js/progress.js"></script>
+	<script src="/js/scroll.js"></script>
 
 	<!-- Custom Script -->
 	<script>
@@ -70,7 +70,7 @@
 
 	<!-- YouTube Section -->
 	<div class="youtube">
-		<div class="content-wrap PiP" style="padding-top: 12.25;">
+		<div class="content-wrap PiP">
 			<!-- Minimize Section -->
 			<section class="video">
 				<div class="button-open" style="float:right">Open</div>
@@ -82,9 +82,8 @@
 					<button onClick="pageScrollStop();">Scroll Stop</button>
 					<button onClick="toggleMusic();">Toggle Music</button>
 					<div class="button-close" style="float:right;">X</div>
-					<iframe id="videoPip" class="videoPip" style="width: 360px;height:360px;"
-						src="https://www.youtube.com/embed/VIDEO_ID?autoplay=0" frameborder="0"
-						allowfullscreen=""></iframe>
+					<iframe id="videoPip" class="videoPip" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=0"
+						frameborder="0" allowfullscreen=""></iframe>
 				</div>
 			</section>
 			<!-- End Minimize Section -->
