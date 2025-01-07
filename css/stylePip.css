@@ -83,13 +83,13 @@ textarea {
   font-size: 0;
 }
 .translate.button{
-    background-image: url("/img/translate.png");	
+    background-image: url("https: //rslgp.github.io/ybtrends/img/translate.png");	
     width: 30px;
     height: 30px;
 	background-size:100% 100%;
 }
 .save.button{
-    background-image: url("/img/save.png");	
+    background-image: url("https: //rslgp.github.io/ybtrends/img/save.png");	
     width: 30px;
     height: 30px;
 	background-size:100% 100%;
