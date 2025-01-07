@@ -189,7 +189,7 @@ textarea {
 .box {
   height: 90%;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .video {
 	width: 90% !important;
 	height: 190px !important;
